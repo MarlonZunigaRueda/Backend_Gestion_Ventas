@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:3000"
+  origin: "https://portal-gestor-ventas.herokuapp.com"
 };
 
 app.use(cors(corsOptions));
