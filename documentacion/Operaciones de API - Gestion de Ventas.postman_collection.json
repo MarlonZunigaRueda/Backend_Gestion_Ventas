@@ -1,0 +1,752 @@
+{
+	"info": {
+		"_postman_id": "2eb025a8-d466-4cce-a86a-006468d835ea",
+		"name": "Operaciones de API - Gestion de Ventas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Retrieve all Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODgyMiwiZXhwIjoxNjM1MTI1MjIyfQ.jTipCmguVGrbCSWYIpxD2tqZ4FyQsykVhe6nst0sg64",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/retrieve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"retrieve"
+							]
+						},
+						"description": "Retrieve all Users"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Users who are Clients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODgyMiwiZXhwIjoxNjM1MTI1MjIyfQ.jTipCmguVGrbCSWYIpxD2tqZ4FyQsykVhe6nst0sg64",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"clients"
+							]
+						},
+						"description": "Retrieve all Users who are Clients"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Users who are Sellers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/sellers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"sellers"
+							]
+						},
+						"description": "Retrieve all Users who are Sellers"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a single User by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/retrieve/617469533003d180a1bc495c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"retrieve",
+								"617469533003d180a1bc495c"
+							]
+						},
+						"description": "Retrieve a single User by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a single Role by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNDkyMjg3NSwiZXhwIjoxNjM1MDA5Mjc1fQ.mSg3nbTTk4ypzf001ajqxKAgiUBcAmcevi0BVVmNvCU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/getRole/6170dc196a4177f4a4ae8faa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"getRole",
+								"6170dc196a4177f4a4ae8faa"
+							]
+						},
+						"description": "Retrieve a single Role by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Clients which name contains an text",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/find/Al",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"find",
+								"Al"
+							]
+						},
+						"description": "Find Clients which name contains an text"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User with id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullname\":\"Andres Perez\",\n    \"state\":{\"name\":\"ACTIVO\",\"value\":\"01\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/update/617469533003d180a1bc495c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"update",
+								"617469533003d180a1bc495c"
+							]
+						},
+						"description": "Update a User with id"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all Users",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"delete"
+							]
+						},
+						"description": "Delete all Users"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create new product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\":\"Licuadora LG\",\n    \"status\":{\"name\":\"Disponible\",\"value\":\"D\"},\n    \"amount\": 10,\n    \"unitValue\": 100000,\n    \"registeredBy\":{\"nameEmployee\":\"Cristian Pineda\",\"idEmployee\":\"6172bf55396247eff0979a2d\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"create"
+							]
+						},
+						"description": "Create new product"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/retrieve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"retrieve"
+							]
+						},
+						"description": "Retrieve all Users"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Products for contain text",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/retrieve?description=Lic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"retrieve"
+							],
+							"query": [
+								{
+									"key": "description",
+									"value": "Lic"
+								}
+							]
+						},
+						"description": "Retrieve all Products for contain text"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a single Product by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/retrieve/6174b85f589d9dcc5b1f586c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"retrieve",
+								"6174b85f589d9dcc5b1f586c"
+							]
+						},
+						"description": "Retrieve a single Product by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Product with id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":{\"name\":\"Disponible\",\"value\":\"D\"},\n    \"amount\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/update/616e16a682b7c89602864135",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"update",
+								"616e16a682b7c89602864135"
+							]
+						},
+						"description": "Update a Product with id"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all Products",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"delete"
+							]
+						},
+						"description": "Delete all Products"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sale",
+			"item": [
+				{
+					"name": "Create new sale",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": {\n        \"name\": \"En proceso\",\n        \"value\": \"EP\"\n    },\n    \"registeredBy\": {\n        \"name\": \"Maria Paz\",\n        \"value\": \"616e0884938ee4f9e4d5b0f6\"\n    },\n    \"amount\": 10,\n    \"total\": 3000000,\n    \"boughtBy\": {\n        \"nameEmployee\": \"Maria Paz\",\n        \"idEmployee\": \"616e0884938ee4f9e4d5b0f9\"\n    },\n    \"productsBox\": [\n        {\n            \"item\": {\n                \"nameProduct\": \"Lavadora LG\",\n                \"idProduct\": \"616e16a682b7c89602864135\"\n            }\n        },\n        {\n            \"item\": {\n                \"nameProduct\": \"Nevera LG\",\n                \"idProduct\": \"616e1df1569ef6ca02db8c5e\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sales/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"create"
+							]
+						},
+						"description": "Create new sale"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Sales",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/sales/retrieve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"retrieve"
+							]
+						},
+						"description": "Retrieve all Sales"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve all Sales for contain text",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/sales/retrieve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"retrieve"
+							]
+						},
+						"description": "Retrieve all Sales for contain text"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a single Sale by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/sales/retrieve/616e334f6377678af2fdc4d0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"retrieve",
+								"616e334f6377678af2fdc4d0"
+							]
+						},
+						"description": "Retrieve a single Sale by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Sale with id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": {\n        \"name\": \"Procesada\",\n        \"value\": \"P\"\n    },\n    \"registeredBy\": {\n        \"name\": \"Maria Paz\",\n        \"value\": \"616e0884938ee4f9e4d5b0f6\"\n    },\n    \"amount\": 10,\n    \"total\": 3000000,\n    \"boughtBy\": {\n        \"nameEmployee\": \"Maria Paz\",\n        \"idEmployee\": \"616e0884938ee4f9e4d5b0f9\"\n    },\n    \"productsBox\": [\n        {\n            \"item\": {\n                \"nameProduct\": \"Lavadora LG\",\n                \"idProduct\": \"616e0884938ee4f9e4d5b0f1\"\n            }\n        },\n        {\n            \"item\": {\n                \"nameProduct\": \"Nevera LG\",\n                \"idProduct\": \"616e0884938ee4f9e4d5b0f2\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sales/update/616e334f6377678af2fdc4d0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"update",
+								"616e334f6377678af2fdc4d0"
+							]
+						},
+						"description": "Update a Sale with id"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all Sales",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNzJiZjU1Mzk2MjQ3ZWZmMDk3OWEyZCIsImlhdCI6MTYzNTAzODg2MiwiZXhwIjoxNjM1MTI1MjYyfQ.uvpxTxTMPtpsLAVcyTHdSEguL4aABKK_iMS726_ByJM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/sales/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sales",
+								"delete"
+							]
+						},
+						"description": "Delete all Sales"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Create new user with Auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullname\":\"Cristian Pineda\",\n    \"state\":{\"name\":\"INACTIVO\",\"value\":\"02\"},\n    \"role\":\"01\",\n    \"email\":\"crpr1988@gmail.com\",\n    \"password\":\"123456-\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						},
+						"description": "Create new user with Auth"
+					},
+					"response": []
+				},
+				{
+					"name": "Sign in de User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"crpr1988@gmail.com\",\n    \"password\":\"123456-\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						},
+						"description": "Sign in de User"
+					},
+					"response": []
+				},
+				{
+					"name": "Access public resource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"all"
+							]
+						},
+						"description": "Retrieve all Users"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
